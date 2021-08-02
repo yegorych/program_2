@@ -18,5 +18,3 @@
         }
         return count;
       };
-
-      console.log(countBits(0));
