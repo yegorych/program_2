@@ -1,21 +1,22 @@
 "use strict";
 
-let numberOfFilms = +prompt('Сколько фильмов вы сегодня посмотрели?','');
+    // Program Me
+    // let n = 120;
+    // let binaryNum = String(n.toString(2));
+    // console.log(binaryNum[4]);
+    
+    var countBits = function(n) {
+        // Program Me
+        let count = 0;
+        let binaryNum = String(n.toString(2));
+        for (let i = 0; i < binaryNum.length; i++){
+          
+          if (binaryNum[i] == 1){
+            count = count + 1;
+          }
+          
+        }
+        return count;
+      };
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: {},
-    privat: false
-};
-
-let arrName = [];
-let arrCount = [];
-for (let i = 0; i < numberOfFilms; i++){
-    arrName[i] = prompt('Название фильма №'+(i+1),'');
-    arrCount[i] = prompt('Ваша оценка?', '');
-    personalMovieDB.movies[arrName[i]] = arrCount[i];
-}
-
-console.log(personalMovieDB);
+      console.log(countBits(0));
